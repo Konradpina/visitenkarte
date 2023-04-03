@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Konrad</title>
+        <style>
+            .flexrow{
+                display: flex;
+                flex-direction: row;
+                height: 5%;
+                transition: all 1s;
+            }
+            .flexrow:hover{
+                height: 90%;
+            }
+            /* .cell{
+                flex:1;
+                text-align: center;
+                transition: all 1s;
+            } */
+
+            .cell1{
+                left: 0%;
+                right: 80%;
+                
+                
+                
+            }
+            .cell2{
+                left: 20%;
+                right: 60%;
+                
+            }
+            .cell3{
+                left: 40%;
+                right: 40%;
+                
+            }
+            .cell4{
+                left: 60%;
+                right: 20%;
+                
+            }
+            .cell5{
+                left: 80%;
+                right: 0%;
+                
+            }
+            .cell{
+                position: absolute;
+                bottom: 95%;
+                top: 0;
+                transition: all 1s;
+            }
+            /* .cell:hover{
+                left: 0%;
+                right: 0%;
+                bottom: 0%;
+                top: 2%;
+            } */
+            .btn1{
+                background-image: url(/pics/IMG_3424.JPG);
+                background-size: cover;
+                background-position: center;
+            }
+            .btn2{
+                background-image: url(/pics/IMG_5587.JPG);
+                background-size: cover;
+                background-position: center;
+            }
+            .btn3{
+                background-image: url(/pics/newjork.JPG);
+                background-size: cover;
+                background-position: center;
+            }
+            .btn4{
+                background-image: url(/pics/Grandcannon.JPG);
+                background-size: cover;
+                background-position: center;
+            }
+
+
+
+            @keyframes pictuerslide {
+                0%{background-position: 20%;}
+
+                50%{background-position: 80%;}
+
+                100%{background-position: 20%}
+            }
+            .font{
+                font-size: 40px;
+                transition: all 2s;
+                color: #b02121;
+            }
+            /* .font:hover{
+                font-size: 200px;
+                color: rgba(240, 248, 255, 0);
+            } */
+            .namecell{
+                flex:2
+            }
+
+
+            .red{
+                background-color: red;
+            }
+            .blue{
+                background-color: blue;
+            }
+            .yellow{
+                background-color: yellow;
+            }
+            .button{
+                width: 100%;
+                height: 100%;
+                animation: pictuerslide 100s infinite;
+            }
+            .cellfocus{
+                position: absolute;
+                bottom: 0%;
+                top: 5%;
+                transition: all 3s;
+                left: 0%;
+                right: 0%;
+                font-size: 200px;
+                color: rgba(240, 248, 255, 0);
+                border-style: hidden;
+                animation: pictuerslide 6s infinite;
+                
+            }
+            .background{
+                background-color: black;
+            }
+            button{
+                border-color:#b02121;
+            }            
+        </style>
+    </head>
+    <body class="background">
+        <div class="flexrow background">
+            <div id="cell1" class="cell cell1"><button class="button btn1 font"></button></div>
+            <div id="cell2" class="cell cell2"><button class="button btn2 font"></button></div>
+            <div id="cell3" class="cell cell3"><button class="button btn3 font"></button></div>
+            <div id="cell4" class="cell cell4"><button class="button btn4 font"></button></div>
+            <div id="cell5" class="cell cell5"><button class="button btn5 font"></button></div>
+        </div>
+        <div class="flexrow background">
+            <div id="hcell1" class="cell cell1 background"><button class="button background font">Pictuers</button></div>
+            <div id="hcell2" class="cell cell2 background"><button class="button background font">Hobbies</button></div>
+            <div id="hcell3" class="cell cell3 background"><button class="button background font">Amerika</button></div>
+            <div id="hcell4" class="cell cell4 background"><button class="button background font">Quiz</button></div>
+            <div id="hcell5" class="cell cell5 background"><button class="button background font">Zaubern</button></div>
+        </div>
+        
+    </body>
+    <script src="konrad2.js"></script>
+</html>
