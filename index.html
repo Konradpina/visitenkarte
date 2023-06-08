@@ -67,7 +67,7 @@
             }
             .startgrid .gride button{
                 background-color: black;
-                height: 50px;
+                min-height: 50px;
                 width: 50%;
                 margin: 5% 25%;
                 border-radius: 10px;
@@ -85,7 +85,18 @@
             .cont{
                 margin: 0;
             }            
-
+            @media only screen and (max-aspect-ratio:10/16){
+                .startgrid{
+                    margin: 2vw;
+                    grid-template-columns: 1fr;
+                }
+                .startgrid .gride{
+                    height: 90vw;
+                }
+                body{
+                    background-color: green;
+                }
+            }
 
             @media only screen and (min-width:1500px){
                 .start{
@@ -122,17 +133,11 @@
                 .startgrid .gride{
                     height: 90vw;
                 }
-            }
-            @media only screen and (max-aspect-ratio:10/16){
-                .startgrid{
-                    margin: 2vw;
-                    grid-template-columns: 1fr;
+                .pg{
+                    font-size: 5vh;
                 }
-                .startgrid .gride{
-                    height: 90vw;
-                }
-           
             }
+            
         </style>
     </head>
     <body>
